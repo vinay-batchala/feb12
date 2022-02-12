@@ -1,0 +1,30 @@
+[12/ rice=50
+cd=2
+ic
+ch=5
+bis
+cnaiinput('enter CUSTOMER name :')
+cpno=int(input('enter CUSTOMER phone number :'))
+rq=int(input('enter number of rice packets :'))
+cdq=int(input('enter number of cool drinks :'))
+icq=int(input('enter number of ice creams :'))
+chq=int(input('enter number of chocolates :'))
+bisq=int(input('enter number of biscuit packets :'))
+bill=(rice*rq)+(cd*cdq)+(ic*icq)+(ch*chq)+(bis*bisq)
+if bill>5000 :
+    dis=bill*10/100
+    tax=bill*10/100
+  
+elif bill>3000 and bill<5000 :
+    dis=bill*8/100
+    tax=bill*10/100
+elif bill>2000 and bill<3000 :
+    dis=bill*5/100
+    tax=0
+elif bill>1000 and bill<2000 :
+    dis=bill*3/100
+    tax=0
+else :
+    tax=bill*18/100
+mainbill= bill-dis+tax
+[                                                                                                                                                                                        print('tax :',tax)
